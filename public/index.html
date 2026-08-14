@@ -130,8 +130,8 @@
               <input id="projectName" />
             </label>
             <label class="span-two">
-              <span>UUID</span>
-              <input id="uuid" />
+              <span>UUID / 多用户配置</span>
+              <input id="uuid" placeholder="单个UUID 或多个：UUID1#管理员,UUID2#张三" />
             </label>
             <label>
               <span>KV 名称</span>
@@ -141,7 +141,7 @@
               <span>现有 KV</span>
               <select id="kvId"></select>
             </label>
-            <p id="modeHint" class="form-note span-two">新建模式会配置随机 UUID、KV 和域名；更新模式只同步代码。</p>
+            <p id="modeHint" class="form-note span-two">新建模式会配置随机 UUID 或多用户、KV 和域名；更新模式只同步代码。</p>
             <label class="toggle">
               <input id="enableWorkersDev" type="checkbox" />
               <span>Worker 模式启用 workers.dev</span>

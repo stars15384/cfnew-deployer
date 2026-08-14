@@ -150,8 +150,10 @@ async function runDeploy(collector) {
 
 function formatDeployResult(payload, result) {
   if (payload.deployMode === 'update') return `${result.projectName} 代码同步完成`;
-  if (result.domain?.hostname) return `https://${result.domain.hostname}/${result.uuid}`;
-  return `${result.projectName} 部署完成，UUID: ${result.uuid}`;
+  const rawUuid = String(result.uuid || '');
+  const 主UUID = rawUuid.split(/[,;\n]+/)[0].split('#')[0].trim() || rawUuid;
+  if (result.domain?.hostname) return `https://${result.domain.hostname}/${主UUID}`;
+  return `${result.projectName} 部署完成，主 UUID: ${主UUID}`;
 }
 
 async function loadResources() {

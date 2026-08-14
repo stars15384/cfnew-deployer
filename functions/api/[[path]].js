@@ -1,7 +1,7 @@
 const 接口地址 = 'https://api.cloudflare.com/client/v4';
 const 兼容日期 = '2026-01-20';
 const 绑定名 = 'C';
-const 源码远程基础 = 'https://raw.githubusercontent.com/byJoey/cfnew/main';
+const 源码远程基础 = 'https://raw.githubusercontent.com/stars15384/cfnew/main';
 
 export default {
   async fetch(request, env, ctx) {

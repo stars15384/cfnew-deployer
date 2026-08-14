@@ -9,7 +9,7 @@ import { randomUUID } from 'node:crypto';
 const 端口 = Number(process.env.PORT || 8790);
 const 静态目录 = resolve(import.meta.dirname, 'public');
 const 源码目录 = resolve(import.meta.dirname, 'public', 'sources');
-const 源码远程基础 = 'https://raw.githubusercontent.com/byJoey/cfnew/main';
+const 源码远程基础 = 'https://raw.githubusercontent.com/stars15384/cfnew/main';
 const 接口地址 = 'https://api.cloudflare.com/client/v4';
 const 兼容日期 = '2026-01-20';
 const 绑定名 = 'C';
